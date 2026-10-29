@@ -12,7 +12,7 @@ import { adminsOnly } from "../middlewares/adminMiddleware";
 
 const router = Router();
 
-router.use(protect,adminsOnly)
+
 router.get("/signup-bycountry", getSignupsByCountry);
 router.get("/kpis", getKPIs);
 router.get("/retention", getRetentionCurve);

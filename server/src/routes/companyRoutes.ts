@@ -9,7 +9,7 @@ import { adminsOnly } from "../middlewares/adminMiddleware";
 
 const router = Router();
 
-router.use(protect,adminsOnly)
+
 router.get("/", getCompanies);
 router.post("/", createCompany);
 export default router;
